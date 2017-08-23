@@ -1,0 +1,1210 @@
+<!DOCTYPE html
+        <html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+    <title>NNsBuilder</title>
+
+    <!-- <link href="../../static/web/css/style.default.css" rel="stylesheet"> -->
+    <link href="static/web/css/covercommon.css" rel="stylesheet">
+    <link href="static/web/css/coverbootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<section>
+
+    <div class="leftpanel">
+
+        <div class="logopanel">
+            <h1><span>NNsBuilder</span></h1>
+        </div>
+        <!-- logopanel -->
+
+        <div class="leftpanelinner">
+            <div class="model_left">
+                <div class="title_modal">模型管理<span class="glyphicon glyphicon-plus-sign" data-toggle="modal"
+                                                   data-target=".model_add"></span></div>
+                <ul class="left_parts">
+                    <li>Alpha</li>
+                    <li>Bravo</li>
+                    <li>Charlie</li>
+                    <li>Delta</li>
+                    <li>Alpha</li>
+                    <li>Bravo</li>
+                    <li>Charlie</li>
+                    <li>Delta</li>
+                    <li>Alpha</li>
+                    <li>Bravo</li>
+                    <li>Charlie</li>
+                    <li>Delta</li>
+                    <li>Alpha</li>
+                    <li>Bravo</li>
+                    <li>Charlie</li>
+                    <li>Delta</li>
+                    <li>Alpha</li>
+                    <li>Bravo</li>
+                    <li>Charlie</li>
+                    <li>Papa</li>
+                    <li>Quebec</li>
+                    <li>Romeo</li>
+                    <li>Sierra</li>
+                    <li>Tango</li>
+                    <li>Whiskey</li>
+                </ul>
+            </div>
+            <!--model_left -->
+
+        </div>
+        <!-- leftpanelinner -->
+    </div>
+    <!-- leftpanel -->
+
+    <div class="mainpanel">
+
+        <div class="headerbar">
+            <div class="header-right">
+                <ul class="headermenu">
+                    <li>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    style="color: #000;font-size: 20px">
+                                admin
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- header-right -->
+
+        </div>
+        <!-- headerbar -->
+
+        <div class="pageheader">
+            <div class="left_model">模型AAA(评分：80.02)</div>
+            <div style="float:right;margin-top:-25px">
+                <a class="btn btn-sm btn-default">下载</a>
+                <a class="btn btn-sm btn-default">删除</a>
+            </div>
+        </div>
+
+        <div class="contentpanel">
+            <ul class="nav nav-tabs ">
+                <li class="active"><a data-toggle="tab" href="#all"><strong>模型结构</strong></a></li>
+                <li class=""><a data-toggle="tab" href="#added"><strong>编译选项</strong></a></li>
+                <li class=""><a data-toggle="tab" href="#assigned"><strong>训练数据</strong></a></li>
+                <li class=""><a data-toggle="tab" href="#unresolved"><strong>模型测评</strong></a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="all" class="tab-pane active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="btn-inline">
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target=".list"
+                                        style="margin:0px 15px;">lavers
+                                </button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target=".list">
+                                    添加
+                                </button>
+                            </div>
+
+                        </div>
+                        <!-- col-md-4 -->
+                        <div class="col-md-2">
+                            <div class="btn-inline">
+                                <button type="button" class="btn btn-primary">下载</button>
+                                <button type="button" class="btn btn-danger">上传</button>
+                            </div>
+
+                        </div>
+                        <!-- col-md-4 -->
+                        <div class="col-md-4">
+
+                            <ul class="nav nav-tabs nav-justified btn-group">
+                                <li class="active"><a href="#home3" data-toggle="tab"><strong>列表</strong></a></li>
+                                <li class=""><a href="#profile3" data-toggle="tab"><strong>代码块</strong></a></li>
+                                <li><a href="#about3" data-toggle="tab"><strong>预览</strong></a></li>
+
+                            </ul>
+
+                        </div>
+                        <!-- col-md-4 -->
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home3">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-default mb30">
+                                        <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Layer Type</th>
+                                            <th>Params</th>
+                                            <th>输入/输出</th>
+                                            <th>操作</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Dense</td>
+                                            <td>{activation=None, use_bias=True,
+                                                bias_constraint=None}
+                                            </td>
+                                            <td>3/1</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Activatio</td>
+                                            <td>Thornton</td>
+                                            <td>3/2</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Dropout</td>
+                                            <td>{rate=0.5, noise_shape=None, seed=None}</td>
+                                            <td>3/3</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Flatten</td>
+                                            <td></td>
+                                            <td>3/3</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>2</td>
+                                            <td>Activatio</td>
+                                            <td>Thornton</td>
+                                            <td>3/2</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Flatten</td>
+                                            <td></td>
+                                            <td>3/3</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>2</td>
+                                            <td>Activatio</td>
+                                            <td>Thornton</td>
+                                            <td>3/2</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Flatten</td>
+                                            <td></td>
+                                            <td>3/3</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>2</td>
+                                            <td>Activatio</td>
+                                            <td>Thornton</td>
+                                            <td>3/2</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Flatten</td>
+                                            <td></td>
+                                            <td>3/3</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>2</td>
+                                            <td>Activatio</td>
+                                            <td>Thornton</td>
+                                            <td>3/2</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Flatten</td>
+                                            <td></td>
+                                            <td>3/3</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>2</td>
+                                            <td>Activatio</td>
+                                            <td>Thornton</td>
+                                            <td>3/2</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Flatten</td>
+                                            <td></td>
+                                            <td>3/3</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>2</td>
+                                            <td>Activatio</td>
+                                            <td>Thornton</td>
+                                            <td>3/2</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Flatten</td>
+                                            <td></td>
+                                            <td>3/3</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>2</td>
+                                            <td>Activatio</td>
+                                            <td>Thornton</td>
+                                            <td>3/2</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Dropout</td>
+                                            <td>{rate=0.5, noise_shape=None, seed=None}</td>
+                                            <td>3/3</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Flatten</td>
+                                            <td></td>
+                                            <td>3/3</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>2</td>
+                                            <td>Activatio</td>
+                                            <td>Thornton</td>
+                                            <td>3/2</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Dropout</td>
+                                            <td>{rate=0.5, noise_shape=None, seed=None}</td>
+                                            <td>3/3</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Flatten</td>
+                                            <td></td>
+                                            <td>3/3</td>
+                                            <td>
+                                                <a href="#">编辑</a>
+                                                <a href="#">删除</a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- table-responsive -->
+                            </div>
+                        </div>
+                        <div class="tab-pane " id="profile3">
+                            <div class="panel panel-default panel-alt">
+
+                                <div class="panel-body nopadding">
+                <textarea id="code" name="code" style="display: none;">&lt;html style="color: green"&gt;
+  &lt;!-- this is a comment --&gt;
+  &lt;head&gt;
+    &lt;title&gt;HTML Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    The indentation tries to be &lt;em&gt;somewhat &amp;quot;do what
+    I mean&amp;quot;&lt;/em&gt;... but might not match your style.
+  &lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+
+                                    <div class="CodeMirror cm-s-default">
+                                        <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 33px;">
+                                            <textarea autocorrect="off" autocapitalize="off" spellcheck="false"
+                                                      tabindex="0"
+                                                      style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea>
+                                        </div>
+                                        <div class="CodeMirror-hscrollbar" style="left: 29px;">
+                                            <div style="height: 1px; width: 0px;"></div>
+                                        </div>
+                                        <div class="CodeMirror-vscrollbar">
+                                            <div style="width: 1px; height: 0px;"></div>
+                                        </div>
+                                        <div class="CodeMirror-scrollbar-filler"></div>
+                                        <div class="CodeMirror-gutter-filler"></div>
+                                        <div class="CodeMirror-scroll" tabindex="-1">
+                                            <div class="CodeMirror-sizer"
+                                                 style="min-width: 413px; margin-left: 29px; min-height: 162px;">
+                                                <div style="position: relative; top: 0px;">
+                                                    <div class="CodeMirror-lines">
+                                                        <div style="position: relative; outline: none;">
+                                                            <div class="CodeMirror-measure"></div>
+                                                            <div style="position: relative; z-index: 1;">
+                                                                <div class="CodeMirror-selected"
+                                                                     style="position: absolute; left: 4px; top: 0px; width: 1012px; height: 14px;"></div>
+                                                                <div class="CodeMirror-selected"
+                                                                     style="position: absolute; left: 4px; top: 140px; width: 0px; height: 14px;"></div>
+                                                                <div class="CodeMirror-selected"
+                                                                     style="position: absolute; left: 4px; top: 14px; width: 1012px; height: 126px;"></div>
+                                                            </div>
+                                                            <div class="CodeMirror-code">
+                                                                <div style="position: relative;">
+                                                                    <div class="CodeMirror-gutter-wrapper"
+                                                                         style="position: absolute; left: -29px;">
+                                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                                                             style="left: 0px; width: 20px;">1
+                                                                        </div>
+                                                                    </div>
+                                                                    <pre><span class="cm-tag">&lt;html</span> <span
+                                                                            class="cm-attribute">style</span>=<span
+                                                                            class="cm-string">"color: green"</span><span
+                                                                            class="cm-tag">&gt;</span></pre>
+                                                                </div>
+                                                                <div style="position: relative;">
+                                                                    <div class="CodeMirror-gutter-wrapper"
+                                                                         style="position: absolute; left: -29px;">
+                                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                                                             style="left: 0px; width: 20px;">2
+                                                                        </div>
+                                                                    </div>
+                                                                    <pre>  <span class="cm-comment">&lt;!-- this is a comment --&gt;</span></pre>
+                                                                </div>
+                                                                <div style="position: relative;">
+                                                                    <div class="CodeMirror-gutter-wrapper"
+                                                                         style="position: absolute; left: -29px;">
+                                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                                                             style="left: 0px; width: 20px;">3
+                                                                        </div>
+                                                                    </div>
+                                                                    <pre>  <span
+                                                                            class="cm-tag">&lt;head&gt;</span></pre>
+                                                                </div>
+                                                                <div style="position: relative;">
+                                                                    <div class="CodeMirror-gutter-wrapper"
+                                                                         style="position: absolute; left: -29px;">
+                                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                                                             style="left: 0px; width: 20px;">4
+                                                                        </div>
+                                                                    </div>
+                                                                    <pre>    <span class="cm-tag">&lt;title&gt;</span>HTML Example<span
+                                                                            class="cm-tag">&lt;/title&gt;</span></pre>
+                                                                </div>
+                                                                <div style="position: relative;">
+                                                                    <div class="CodeMirror-gutter-wrapper"
+                                                                         style="position: absolute; left: -29px;">
+                                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                                                             style="left: 0px; width: 20px;">5
+                                                                        </div>
+                                                                    </div>
+                                                                    <pre>  <span
+                                                                            class="cm-tag">&lt;/head&gt;</span></pre>
+                                                                </div>
+                                                                <div style="position: relative;">
+                                                                    <div class="CodeMirror-gutter-wrapper"
+                                                                         style="position: absolute; left: -29px;">
+                                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                                                             style="left: 0px; width: 20px;">6
+                                                                        </div>
+                                                                    </div>
+                                                                    <pre>  <span
+                                                                            class="cm-tag">&lt;body&gt;</span></pre>
+                                                                </div>
+                                                                <div style="position: relative;">
+                                                                    <div class="CodeMirror-gutter-wrapper"
+                                                                         style="position: absolute; left: -29px;">
+                                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                                                             style="left: 0px; width: 20px;">7
+                                                                        </div>
+                                                                    </div>
+                                                                    <pre>    The indentation tries to be <span
+                                                                            class="cm-tag">&lt;em&gt;</span>somewhat <span
+                                                                            class="cm-atom">&amp;quot;</span>do what</pre>
+                                                                </div>
+                                                                <div style="position: relative;">
+                                                                    <div class="CodeMirror-gutter-wrapper"
+                                                                         style="position: absolute; left: -29px;">
+                                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                                                             style="left: 0px; width: 20px;">8
+                                                                        </div>
+                                                                    </div>
+                                                                    <pre>    I mean<span
+                                                                            class="cm-atom">&amp;quot;</span><span
+                                                                            class="cm-tag">&lt;/em&gt;</span>... but might not match your style.</pre>
+                                                                </div>
+                                                                <div style="position: relative;">
+                                                                    <div class="CodeMirror-gutter-wrapper"
+                                                                         style="position: absolute; left: -29px;">
+                                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                                                             style="left: 0px; width: 20px;">9
+                                                                        </div>
+                                                                    </div>
+                                                                    <pre>  <span
+                                                                            class="cm-tag">&lt;/body&gt;</span></pre>
+                                                                </div>
+                                                                <div style="position: relative;">
+                                                                    <div class="CodeMirror-gutter-wrapper"
+                                                                         style="position: absolute; left: -29px;">
+                                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                                                             style="left: 0px; width: 20px;">10
+                                                                        </div>
+                                                                    </div>
+                                                                    <pre><span class="cm-tag">&lt;/html&gt;</span></pre>
+                                                                </div>
+                                                                <div style="position: relative;">
+                                                                    <div class="CodeMirror-gutter-wrapper"
+                                                                         style="position: absolute; left: -29px;">
+                                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt"
+                                                                             style="left: 0px; width: 20px;">11
+                                                                        </div>
+                                                                    </div>
+                                                                    <pre>&nbsp;</pre>
+                                                                </div>
+                                                            </div>
+                                                            <div class="CodeMirror-cursor"
+                                                                 style="left: 4px; top: 140px; height: 14px; display: none;">
+                                                                &nbsp;</div>
+                                                            <div class="CodeMirror-cursor CodeMirror-secondarycursor"
+                                                                 style="display: none;">&nbsp;</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="position: absolute; height: 30px; width: 1px; top: 162px;"></div>
+                                            <div class="CodeMirror-gutters" style="height: 300px;">
+                                                <div class="CodeMirror-gutter CodeMirror-linenumbers"
+                                                     style="width: 28px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- panel-body -->
+                                <div class="panel-footer">
+                                    <div class="alert alert-info nomargin">
+                                        <p>The editor has a height of 300px. If you want to change it, just open the
+                                            file css/codemirror/codemirror.css in line 3. Remove height for
+                                            autoresize.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane" id="about3">
+                            <div class="pre_look btn btn-white">
+                                <div class=" btn btn-white">Sequerntial_2(Sequerntial)</div>
+                                <div class=" btn btn-white">Sequerntial_5(Sequerntial)</div><br><span class="glyphicon glyphicon-arrow-down"></span><br>
+                                <div class=" btn btn-white">merge_3(Merge)</div><br><span class="glyphicon glyphicon-arrow-down"></span><br>
+                                <div class=" btn btn-white">Lstm_1(Lstm)</div><br><span class="glyphicon glyphicon-arrow-down"></span><br>
+                                <div class=" btn btn-white">dropout_4(Dropout)</div><br><span class="glyphicon glyphicon-arrow-down"></span><br>
+                                <div class=" btn btn-white">dense_1(dense)</div><br><span class="glyphicon glyphicon-arrow-down"></span><br>
+                                <div class=" btn btn-white">activation_2(Activation)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pre_next">
+                        <button class="btn btn-default">下一步</button>
+                        <button class="btn btn-default pre">上一步</button>
+                    </div>
+                </div>
+                <!-- tab-pane -->
+
+                <div id="added" class="tab-pane">
+                    <form class="form-horizontal form-bordered">
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Optimizer</label>
+
+                            <div class="col-sm-6">
+                                <select class="form-control">
+                                    <option value="">SGD</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="disabledinput">lr</label>
+
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="0.01" id="" class="form-control"
+                                        >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="readonlyinput">momentum</label>
+
+                            <div class="col-sm-6">
+                                <input type="text" value="Read Only Input" id="readonlyinput" class="form-control"
+                                       placeholder="0">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">decay</label>
+
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="0" class="form-control">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">nesterov</label>
+
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="false" title="" data-toggle="tooltip"
+                                       data-trigger="hover" class="form-control tooltips"
+                                       data-original-title="Tooltip goes here">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Loss</label>
+
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="categorical_crossentropy " class="form-control popovers"
+                                       data-toggle="popover" data-placement="top" data-original-title="The Title"
+                                       data-content="Content goes here..." data-trigger="click">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">metrics</label>
+
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="accuracy">
+                            </div>
+                        </div>
+
+
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-3">
+                                    <button class="btn btn-primary">编辑模型</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="pre_next">
+                        <button class="btn btn-default">下一步</button>
+                        <button class="btn btn-default pre">上一步</button>
+                    </div>
+                </div>
+                <!-- tab-pane -->
+
+                <div id="assigned" class="tab-pane">
+                    <div class="table-btn">
+                        <button class="btn btn-primary mr5 btn-exe" data-toggle="modal" data-target=".mongo">导出为Excel
+                        </button>
+                        <button class="btn btn-primary mr5 btn-exe" data-toggle="modal" data-target=".mongo">导出Excel
+                        </button>
+                        <button class="btn btn-primary mr5 btn-exe" data-toggle="modal" data-target=".mongo">从Mongo导入
+                        </button>
+                        <button class="btn btn-primary mr5 btn-exe" data-toggle="modal" data-target=".train">训练设置
+                        </button>
+
+                    </div>
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-default mb30">
+                                <thead>
+                                <tr>
+                                    <th>输入1</th>
+                                    <th>输入2</th>
+                                    <th>输入3</th>
+                                    <th>输出1</th>
+                                    <th>输出2</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- table-responsive -->
+                    </div>
+                    <ul class="pagination" style="margin-left:40%;">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                    <div class="pre_next">
+                        <button class="btn btn-default">下一步</button>
+                        <button class="btn btn-default pre">上一步</button>
+                    </div>
+                </div>
+                <!-- tab-pane -->
+
+                <div id="unresolved" class="tab-pane">
+                    <div class="table-btn">
+                        <button class="btn btn-primary mr5 btn-exe" data-toggle="modal" data-target=".mongo">导出为Excel
+                        </button>
+                        <button class="btn btn-primary mr5 btn-exe" data-toggle="modal" data-target=".mongo">导出Excel
+                        </button>
+                        <button class="btn btn-primary mr5 btn-exe" data-toggle="modal" data-target=".mongo">从Mongo导入
+                        </button>
+                        <button class="btn btn-primary mr5 btn-exe" data-toggle="modal" data-target=".train">测评设置
+                        </button>
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-default mb30">
+                                <thead>
+                                <tr>
+                                    <th>输入1</th>
+                                    <th>输入2</th>
+                                    <th>输入3</th>
+                                    <th>输出1</th>
+                                    <th>输出2</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0.23</td>
+                                    <td>0.26</td>
+                                    <td>1</td>
+                                    <td>1.11</td>
+                                    <td>
+                                        <a href="">编辑</a>
+                                        <a href="">删除</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- table-responsive -->
+                    </div>
+                    <ul class="pagination" style="margin-left:40%;">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                    <div class="pre_next">
+                        <button class="btn btn-default">下一步</button>
+                        <button class="btn btn-default pre">上一步</button>
+                    </div>
+                </div>
+                <!-- tab-pane -->
+
+            </div>
+            <!-- tab-content -->
+
+        </div>
+
+    </div>
+    <!-- mainpanel -->
+
+</section>
+
+<div class="modal fade mongo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+     style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <form class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h4 class="modal-title">导入MongoDB数据</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="blue col-xs-4 control-label">Mongourl</label>
+
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="blue col-xs-4 control-label">查询语句</label>
+
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="blue col-xs-4 control-label">输出字段</label>
+
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="blue col-xs-4 control-label"></label>
+
+                    <div class="col-xs-6">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> 清空历史数据
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-write">
+                    取消
+                </button>
+                <button class="btn btn-black" type="submit">
+                    完成
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade train" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+     style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h4 class="modal-title">训练设置</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="blue col-xs-4 control-label">batch_size</label>
+
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" placeholder="1000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="blue col-xs-4 control-label">epochs</label>
+
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" placeholder="0.1">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="blue col-xs-4 control-label">validation_split</label>
+
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" placeholder="0.1">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="blue col-xs-4 control-label">shuffle</label>
+
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" placeholder="true">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-write">
+                    取消
+                </button>
+                <button class="btn btn-primary" type="submit">
+                    训练
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade model_add" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+     style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h4 class="modal-title">创建模型</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal form-bordered">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label" for="disabledinput">模型名称</label>
+
+                        <div class="col-sm-6">
+                            <input type="text" placeholder="文本" class="form-control"
+                                    >
+                        </div>
+                    </div>
+
+                </form>
+                <div class="modal-footer">
+                    <button class="btn btn-write">
+                        取消
+                    </button>
+                    <button class="btn btn-black" type="submit">
+                        完成
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal fade list" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+         style="display: none;">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    <h4 class="modal-title">窗口标题</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal form-bordered">
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Optimizer</label>
+
+                            <div class="col-sm-6">
+                                <select class="form-control">
+                                    <option value="">SGD</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="disabledinput">lr</label>
+
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="0.01" id="disabledinput" class="form-control"
+                                        >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="readonlyinput">momentum</label>
+
+                            <div class="col-sm-6">
+                                <input type="text" value="Read Only Input" id="" class="form-control"
+                                       placeholder="0">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">decay</label>
+
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="0" class="form-control">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">nesterov</label>
+
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="false" title="" data-toggle="tooltip"
+                                       data-trigger="hover" class="form-control tooltips"
+                                       data-original-title="Tooltip goes here">
+                            </div>
+                        </div>
+
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-write">
+                            取消
+                        </button>
+                        <button class="btn btn-black" type="submit">
+                            完成
+                        </button>
+                    </div>
+             </div>
+        </div>
+    </div>
+
+        <script src="static/libs/js/jquery-1.10.2.min.js"></script>
+        <!-- <script src="../static/js/jquery-migrate-1.2.1.min.js"></script> -->
+        <script src="static/libs/js/bootstrap.min.js"></script>
+        <!-- <script type="text/javascript" src='../static/lib/jquerydatabase/jquery.dataTables.min.js'></script> -->
+</body>
+</html>

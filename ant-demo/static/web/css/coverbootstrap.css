@@ -1,0 +1,19 @@
+.pre{
+    float: right;
+}
+.next{
+    float: left;
+}
+.table-btn{
+    /*float: right;*/
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.pre_look div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.pre_look span{
+    margin-left: 1px;
+}
+
